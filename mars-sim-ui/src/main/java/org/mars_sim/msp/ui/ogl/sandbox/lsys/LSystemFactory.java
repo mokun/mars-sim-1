@@ -31,7 +31,7 @@ public class LSystemFactory {
 	public static final String SYMBOL_GAMMA_MINUS = ",";
 	public static final String SYMBOL_COLOR_PLUS = "*";
 	public static final String SYMBOL_COLOR_MINUS = "#";
-	public static final String[] SYMBOLJ = {
+	public static final String[] SYMBOLS = {
 		SYMBOL_PUSH,
 		SYMBOL_POP,
 		SYMBOL_JUMP,
@@ -92,10 +92,10 @@ public class LSystemFactory {
 		boolean hit = false;
 		boolean paint = false;
 		int i = 0;
-		while ((!hit) && (i < SYMBOLJ.length)) {
-			if (rest.startsWith(SYMBOLJ[i])) {
+		while ((!hit) && (i < SYMBOLS.length)) {
+			if (rest.startsWith(SYMBOLS[i])) {
 				hit = true;
-				String symbol = SYMBOLJ[i];
+				String symbol = SYMBOLS[i];
 				rest = rest.substring(symbol.length());
 				if (symbol.compareTo(SYMBOL_JUMP) == 0) {
 					this.state = this.state.jump();
@@ -232,7 +232,7 @@ public class LSystemFactory {
 	class LSysState {
 		double[] position = Util.nul3();
 		double[] rotation = Util.nul3();
-		double[] color = Util.nul4();
+		double[] color = Util.nul31();
 		LSysState jump() {
 			LSysState result = new LSysState();
 			result.color = this.color.clone();

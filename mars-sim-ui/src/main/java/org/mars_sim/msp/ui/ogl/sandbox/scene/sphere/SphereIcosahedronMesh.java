@@ -109,9 +109,9 @@ extends SphereAbstract {
 			double[] v01 = Util.add(v0,v1);	// calculate vertices for triangulation
 			double[] v12 = Util.add(v1,v2);
 			double[] v20 = Util.add(v2,v0);
-			Util.length3(v01);           // normalize vertices to unit sphere
-			Util.length3(v12);
-			Util.length3(v20);
+			Util.norm3(v01);           // normalize vertices to unit sphere
+			Util.norm3(v12);
+			Util.norm3(v20);
 			subdivide(v0,  v01, v20, step - 1);	// recursion
 			subdivide(v1,  v12, v01, step - 1);
 			subdivide(v2,  v20, v12, step - 1);

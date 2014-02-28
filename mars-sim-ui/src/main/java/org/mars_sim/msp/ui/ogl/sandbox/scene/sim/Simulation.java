@@ -34,6 +34,7 @@ extends ParametrizedAbstract {
 	protected static final int PARAMETERINDEX_DELTA_TIME = 0;
 	protected static final int PARAMETERINDEX_SPEED_LIMIT = 1;
 
+	/** number of vector components. two is a plane, three a volume. */
 	public static final int DIMENSION = 3;
 
 	protected boolean active;
@@ -107,7 +108,7 @@ extends ParametrizedAbstract {
 			} else {
 				fixed = false;
 			}
-			mapNodes.put(node,new NodeForceObject(Util.rnd3(-100.0f,100.0f),fixed));
+			mapNodes.put(node,new NodeForceObject(Util.rnd3(-100d,100d),fixed));
 		}
 		for (TreeEdge edge : tree.getEdges()) {
 			NodeForceObject node1 = mapNodes.get(edge.getSource());

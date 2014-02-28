@@ -20,27 +20,27 @@ extends RotatingObjectAbstract {
 	}
 
 	public double getDiameter() {
-		return 2.0f * this.getRadius();
+		return 2d * this.getRadius();
 	}
 	
 	public void setDiameter(double diameter) {
-		this.setRadius(0.5f * diameter);
+		this.setRadius(0.5d * diameter);
 	}
 
 	public double getEquator() {
-		return Math.PI * 2.0f * this.getRadius();
+		return Math.PI * 2d * this.getRadius();
 	}
 
 	public void setEquator(double equator) {
-		this.setRadius(0.5f * equator / Math.PI);
+		this.setRadius(0.5d * equator / Math.PI);
 	}
 	
 	public double getVolume() {
-		return 4.0f * Math.PI * Math.pow(this.getRadius(),3) / 3.0f;
+		return 4d * Math.PI * Math.pow(this.getRadius(),3) / 3d;
 	}
 	
 	public void setVolume(double volume) {
-		this.setRadius(Math.pow(3.0f * volume / (4.0f * Math.PI),1.0f / 3.0f)); 
+		this.setRadius(Math.pow(3d * volume / (4d * Math.PI),1d / 3d)); 
 	}
 	
 	public double[] getCenter() {

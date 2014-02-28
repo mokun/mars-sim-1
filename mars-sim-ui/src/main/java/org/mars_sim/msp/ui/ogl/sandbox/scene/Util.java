@@ -49,7 +49,7 @@ public class Util {
 	 * returns euclidian length of this vector.
 	 * @param v {@link Double}[]
 	 */
-	public static final void length3(double[] v) {
+	public static final void norm3(double[] v) {
 		double d = Math.sqrt(v[0]*v[0]+v[1]*v[1]+v[2]*v[2]);
 		if (d != 0) {
 			d = 1.0d / d;
@@ -85,6 +85,13 @@ public class Util {
 	 */
 	public static final double[] nul3() {
 		return new double[3];
+	}
+
+	/**
+	 * @return a four component vector with three zeros and a one.
+	 */
+	public static final double[] nul31() {
+		return new double[] {0d,0d,0d,1d};
 	}
 
 	/**

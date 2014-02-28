@@ -32,7 +32,7 @@ extends SceneObjectAbstract {
 		this.setPoint2(point2);
 		this.setColor(color);
 	}
-	
+
 	@Override
 	public void prerender(GL2 gl) {
 		super.prerender(gl);
@@ -46,27 +46,27 @@ extends SceneObjectAbstract {
 		gl.glVertex3d(punkto2[0],punkto2[1],punkto2[2]);
 		gl.glEnd();
 	}
-	
+
 	public double[] getColor() {
 		return this.getParamDoubleArray(PARAM_COLOR);
 	}
-	
+
 	public void setColor(double[] color) {
 		this.setParam(PARAM_COLOR,color);
 	}
-	
+
 	public void setPoint1(double[] point1) {
 		this.setParam(PARAM_POINT1,point1);
 	}
-	
+
 	public void setPoint2(double[] point2) {
 		this.setParam(PARAM_POINT2,point2);
 	}
-	
+
 	public double[] getPoint1() {
 		return this.getParamDoubleArray(PARAM_POINT1);
 	}
-	
+
 	public double[] getPoint2() {
 		return this.getParamDoubleArray(PARAM_POINT2);
 	}
