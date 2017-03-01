@@ -25,12 +25,12 @@ Mars is a harsh world but is certainly less unforgiving than our Moon. Settlers 
 For a general description of this project, see our project website at at https://mars-sim.github.io/ 
 
 
-## Feedback and Comments
+## Feedback/Comments
 
 We welcome anyone to contribute mars-sim in terms of ideas and concepts. Feel free to provide your comments at our facebook community at https://www.facebook.com/groups/125541663548/
 
 
-## Issues
+## Issues/Tickets
 
 If you want to be a part of our development team, check out the past and current issues at 
 * https://sourceforge.net/p/mars-sim/tickets/search/?q=status%3Awont-fix+or+status%3Aclosed
@@ -58,7 +58,7 @@ Check our latest 3.1.0 version preview at https://sourceforge.net/projects/mars-
 ## Development Prerequisites
 
 * Eclipse IDE
-* Subclipse (SVN access)
+* Subclipse or Subversive Team Provider (for SVN access)
 * m2eclipse (Maven/Eclipse integration)
 * Java Development Kit (JDK) 8u77 or up.
 
